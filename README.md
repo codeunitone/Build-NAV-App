@@ -2,6 +2,13 @@
 
 Inspired from these Blogpost http://dankinsella.blog/business-central-al-compiler/ I decided to implement it and provide the Scripts for everyone.
 
+## Prerequisites
+
+You need the AL compiler to build the extension from the command line. The compiler is part of the AL-Extension for VSCode. You find it on every Product DVD under `.\ModernDev\program files\Microsoft Dynamics NAV\<NAVVersionNo>\Modern Development Environment\ALLanguage.vsix`.
+If you have the `Modern Dev Enviornment` instlled it is locatet at `C:\Program Files (x86)\Microsoft Dynamics NAV\<NAVVersionNo>\Modern Development Environment\ALLanguage.vsix`.
+
+Rename the `ALLanguage.vsix` to `ALLanguage.zip` and extract it somewhere. You will find the compiler under `.\extension\bin\alc.exe`
+
 ## Usage
 
 Copy the `Build` folder into you AL Extension folder. 
@@ -93,6 +100,7 @@ param (
 
 This script is building you application and saves the binary (*.app file) in the root folder you AL project. The filename is a cocatination of Publisher, Name and Version you specified in the `app.json`
 
+The scrip is assuming that you do have the AL compiler located at `'C:\Program Files (x86)\Microsoft Dynamics NAV\110\Modern Development Environment\ALLanguage\extension\bin\alc.exe'`
 
 ## Deploy
 
