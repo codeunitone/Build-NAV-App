@@ -89,12 +89,12 @@ param (
 )
 ```
 
-## Build
+### Build
 
 This script is building you application and saves the binary (*.app file) in the root folder you AL project. The filename is a cocatination of Publisher, Name and Version you specified in the `app.json`
 
 
-# Deploy
+## Deploy
 
 After the Extension is build you can deploy it with following cmdlets (in that order). These cmdlets are part of the NAV Admin Shell.
 
